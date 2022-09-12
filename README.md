@@ -7,7 +7,9 @@ This is a UUID library for implemented in C++ and can be used by downloading thi
 ```
 
 ### Usage
+
 You can use this library to generate uuid libraries as follows.
+
 ```cpp
 // main.cpp
 #include <iostream>
@@ -23,25 +25,33 @@ int main()
 }
 ```
 
-## API Reference 
-- `RandomHexGenerator` -> Class
-  - Method: `string generate()` -> Usage:
-    - Generates a random hex of length 5
-    ```cpp
-    int main() 
-    {
-        uuid::RandomHexGenerator random_generator;
-        std::cout << random_generator.generate()
-    }
-    ```
+## API Reference
 
-- `UUID` -> Class
-  - Method: `string generate()` -> Usage:
-    - Generate a random UUID
-    ```cpp
-    int main() 
-    {
-        uuid::UUID uuid;
-        std::cout << uuid.generate();
-    }
-    ```
+-   `namespace uuid` -> Namespace
+
+    -   It includes two classes
+        `RandomHexGenerator` utility class to generate hex value.
+        And `UUID` Main class for UUID generation.
+
+        -   `RandomHexGenerator` -> Class
+
+            -   Method: `string generate()` -> Usage:
+                -   Generates a random hex of length 5
+                ```cpp
+                int main()
+                {
+                    uuid::RandomHexGenerator random_generator;
+                    std::cout << random_generator.generate()
+                }
+                ```
+
+        -   `UUID` -> Class
+            -   Method: `string generate()` -> Usage:
+                -   Generate a random UUID
+                ```cpp
+                int main()
+                {
+                    uuid::UUID uuid;
+                    std::cout << uuid.generate();
+                }
+                ```
